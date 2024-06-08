@@ -1,0 +1,27 @@
+.cartContainer {
+  margin: 1rem;
+  /* background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(199, 179, 234, 1) 55%
+  ); */
+  background-color: var(--learnzilla-purple);
+}
+
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 1rem #00000025 inset;
+}
+
+.cartItemsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalAndBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}

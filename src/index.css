@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* --font-title           : 'Playfair Display', serif; */
+  --font-title: "Roboto", sans-serif;
+  --crayola-yellow: #efcb68;
+  --crayola-yellow-darker: #eabb39;
+  --rich-black: #000411;
+  --just-black: #000000;
+  --dark-purple: #160c28;
+  --lighter-purple: #2b174f;
+  --ash-gray: #aeb7b3;
+  --ash-gray-lighter: #c9cfcc;
+  --honeydew: #e1efe6;
+  --honeydew-darker: hsl(141, 30%, 81%);
+  --nice-gray: #bebebe;
+  --learnzilla-purple: #c7b3ea;
+  --normal-white: #fff;
+  --normal-black: #000;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-family    : 'Mukta', sans-serif; */
+  font-family: var(--font-title);
+  scroll-behavior: smooth;
+  font-size: 1.5ch;
+  background-color: var(--learnzilla-purple);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: var(--font-title);
+}
+
+.page-container {
+  height: 100%;
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+button,
+a {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: fit-content;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-size: 2ch;
+  font-weight: 600;
+  text-align: left;
+  background-color: var(--ash-gray-lighter);
+  color: var(--nice-black);
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: 0.2rem solid var(--ash-gray);
+}
+
+input[type="text"]:hover:not([disabled]),
+input[type="password"]:hover:not([disabled]),
+input[type="email"]:hover:not([disabled]),
+input[type="text"]:focus-visible:not([disabled]),
+input[type="password"]:focus-visible:not([disabled]),
+input[type="email"]:focus-visible:not([disabled]) {
+  outline: 0.3rem solid var(--lighter-purple);
+  /* background-color: whitesmoke; */
+  box-shadow: 0px 0.4rem 1rem -0.2rem var(--lighter-purple);
+}
+
+input[type="text"]:autofill,
+input[type="password"]:autofill,
+input[type="email"]:autofill {
+  font-size: 2ch;
+  font-weight: 600;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled {
+  background-color: hsl(150, 9%, 87%);
+  color: hsl(0, 0%, 54%);
+  border: none;
+  outline: 0.2rem solid var(--ash-gray);
+}
+
+.dark {
+  filter: invert(1);
+}
