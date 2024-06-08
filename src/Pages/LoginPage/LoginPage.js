@@ -107,7 +107,7 @@ function LoginPage({ isLoggedIn }) {
         MySwal.fire({
           position: "center",
           icon: "error",
-          title: "Ha ocurrido un error, por favor vuelve a intentarlo.",
+          title: "Usuario o contraseña incorrectos",
           showConfirmButton: false,
           timer: 2500,
         });
@@ -116,7 +116,7 @@ function LoginPage({ isLoggedIn }) {
       MySwal.fire({
         position: "center",
         icon: "error",
-        title: "Usuario o contraseña incorrectos",
+        title: "Ha ocurrido un error interno. Por favor intenta de nuevo luego.",
         showConfirmButton: false,
         timer: 2500,
       });
