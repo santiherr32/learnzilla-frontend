@@ -8,7 +8,7 @@ import store from "./Store/index";
 import App from "./App";
 import axios from "axios"; //Importo axios
 const API = process.env.REACT_APP_API; //Obtengo la variable de entorno con el api
-axios.defaults.baseURL = API || "https://whispering-loud-monarch.glitch.me"; //Configuración base para conectarse al backend desde local o desde la nube
+axios.defaults.baseURL = API || "https://learnzilla-backend.vercel.app"; //Configuración base para conectarse al backend desde local o desde la nube
 
 ReactDOM.render(
   <React.StrictMode>
